@@ -2,17 +2,16 @@
 
 A simple REPL based command line tool for accessing the Wish Core. 
 
-This is bleeding egde software and WILL BREAK from time to time, you have been warned.
-
 This package is dependent on the wish-core-api package, which currently is working with Linux x64/ia32, OSX x64, on nodejs v6.x only. To get it working you also need to run a Wish Core on the same host.
 
 ## Prerequisites
 
-If you are running on Linux x64 or OSX x64 everything should work out of the box according to the instructions below. Windows is not supported yet.
+Linux x64 and OSX x64 are currently supported. 
+Windows binaries are not yet available.
 
 Download and install node.js v6.x: https://nodejs.org/dist/latest-v6.x/. You may use Node Version Manager `nvm` (https://github.com/creationix/nvm).
 
-You will need to have an appropriate wish-core (the peer-to-peer identity based communication layer mist is based on). The source is available at: https://github.com/WishCore/wish-c99.
+You will need to have an appropriate wish-core (the peer-to-peer identity based communication layer mist is based on). The source is available at: https://github.com/ControlThings/wish-c99.
 
 ## Install
 
@@ -26,11 +25,10 @@ npm install -g wish-cli
 wish-cli
 ```
 
-If everything is working correctly you should be greeted with something like this:
+You should be greeted with something like this:
 
 ```sh
 Welcome to Wish CLI vX.Y.Z
-Not everything works as expected! You have been warned.
 Connected to Wish Core v0.8.0-beta-2
 wish> 
 ```
@@ -45,7 +43,7 @@ There is a primitive directory implementation for publishing, finding and befrie
 
 `directory.publish(uid: Buffer(32))`
 
-`direcotry.friendRequest(uid: Buffer(32), entry: DirectoryEntry)`
+`directory.friendRequest(uid: Buffer(32), entry: DirectoryEntry)`
 
 ### Wish API
 
